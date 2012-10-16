@@ -7,13 +7,21 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
+#define FILE_DIR "Test"
+#define FILE_DIR "Test/Performance"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
+#define DEBUG
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
 #include "UUID.dm"
 #include "UUIDVersion.dm"
+#ifdef __MAIN__ // BEGIN_DEMO
+#include "Test\TestClient.dm"
+#include "Test\TestScenario.dm"
+#include "Test\Performance\Create.dm"
+#endif          // END_DEMO
 // END_INCLUDE
 
